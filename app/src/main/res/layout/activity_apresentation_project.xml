@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApresentationProjectActivity"
+    android:background="@color/azul_milho">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgproject" />
+
+    <TextView
+        android:id="@+id/textView_presentation"
+        android:layout_width="412dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="428dp"
+        android:fontFamily="cursive"
+        android:text="@string/textPresentation"
+        android:textSize="24sp"
+        android:padding="2dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hint_PresentationSolution"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hintSolution"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_presentation" />
+
+    <EditText
+        android:id="@+id/presentation_Email"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint_PresentationSolution" />
+
+    <EditText
+        android:id="@+id/presentation_Phone"
+        android:layout_width="277dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="@string/hintPhone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/button_SendSolutionPresentation"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/quartzo"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/black"
+        android:text="@string/btnSendSolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presentation_Phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

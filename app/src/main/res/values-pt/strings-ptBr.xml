@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Projeto E.I.T.A</string>
+    <string name="name">Nome</string>
+    <string name="password">Senha</string>
+    <string name="remember">Lembrar-me</string>
+    <string name="login">Login</string>
+    <string name="next">Avançar</string>
+    <string name="welcome">Bem vindo:</string>
+    <string name="textExample">O E.I.T.A! Recife é um programa que identifica desafios da cidade do Recife e cria um ambiente
+        propício para realizar conexões capazes de implementar soluções inovadoras. Visa a obtenção de soluções inovadoras
+        para desafios da cidade do Recife, órgão que tem como principal função servir o cidadão. O processo seguirá os princípios da
+        Inovação Aberta, contemplando três macro fases: desafios públicos, prototipagem e desenvolvimento de produto mínimo viável
+        (MVP), em um período de aproximadamente 6 (seis) meses.</string>
+    <string name="textPresentation">Como podemos reduzir o abandono de cães e gatos na cidade do Recife, identificando e
+        registrando cada um deles de forma escalável e mudando a cultura da população no trato desses animais?</string>
+    <string name="msgError">Usuário inválido</string>
+    <string name="hintSolution">Digite sua solução</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintPhone">Celular</string>
+    <string name="btnSendSolution">Enviar solução</string>
+    <string name="msgSucess">Enviado com sucesso</string>
+</resources>
