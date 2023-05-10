@@ -1,4 +1,4 @@
-# ProjetoEITA - Repositório criado para a entrega da 1ºVA da disciplina de Programação Mobile
+# ProjetoEITA - Repositório criado para a entrega do projeto da disciplina de Programação Mobile
 
 **Projeto desenvolvido de acordo com as regras propostas pelo docente responsável; são essas:**
 
