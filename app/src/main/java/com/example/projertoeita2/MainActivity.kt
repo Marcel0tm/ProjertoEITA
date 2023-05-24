@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.projertoeita2.R
 import com.example.projertoeita2.databinding.ActivityMainBinding
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+
 //import com.example.projetoeita2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +32,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 binding.edUsuario.setText("")
                 binding.edSenha.setText("")
+                // Testando conexão com Firebase
+                val database = Firebase.database
+                val myRef = database.getReference("message")
+
+                myRef.setValue("Hello, World!")
             }
             else{
                 Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()

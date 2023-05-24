@@ -19,4 +19,8 @@
     <string name="hintPhone">Celular</string>
     <string name="btnSendSolution">Enviar solução</string>
     <string name="msgSucess">Enviado com sucesso</string>
+    <string name="titleAdmin">ADMIN CADASTRO</string>
+    <string name="cadastrar">REGISTRAR</string>
+    <string name="salario">Salário</string>
+    <string name="cargo">cargo</string>
 </resources>
