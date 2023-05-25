@@ -1,12 +1,12 @@
 package com.example.projertoeita2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.projertoeita2.databinding.ActivityCadastrarVagasBinding
+import com.example.projetoeita2.empresaModelo
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import layout.empresaModelo
 
 class CadastrarVagasActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCadastrarVagasBinding
