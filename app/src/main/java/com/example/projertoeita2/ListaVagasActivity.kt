@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.projertoeita2.databinding.ActivityCadastrarVagasBinding
+import com.example.projertoeita2.databinding.ActivityListaVagasBinding
 import com.google.firebase.database.*
 import com.example.projetoeita2.empresaModelo
 
@@ -16,15 +18,17 @@ class ListaVagasActivity : AppCompatActivity() {
     private lateinit var tvLoadingData: TextView
     private lateinit var empList: ArrayList<empresaModelo>
     private lateinit var dbRef: DatabaseReference
+    private lateinit var binding: ActivityListaVagasBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_vagas)
+        binding = ActivityListaVagasBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        empRecyclerView = findViewById(R.id.listVagas)
+        empRecyclerView = binding.listVagas
         empRecyclerView.layoutManager = LinearLayoutManager(this)
         empRecyclerView.setHasFixedSize(true)
-        tvLoadingData = findViewById(R.id.tvLoadingData)
+        tvLoadingData = binding.tvLoadingData
 
         empList = arrayListOf<empresaModelo>()
 
