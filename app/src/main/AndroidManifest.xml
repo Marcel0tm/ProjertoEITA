@@ -15,7 +15,7 @@
             android:name=".ListaVagasActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastrarVagasActivity"
+            android:name=".CadastrarPerguntaActivity"
             android:exported="false" />
         <activity
             android:name=".DescriptionProjectActivity"

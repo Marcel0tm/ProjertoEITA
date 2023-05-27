@@ -23,4 +23,5 @@
     <string name="cadastrar">REGISTRAR</string>
     <string name="salario">Salário</string>
     <string name="cargo">cargo</string>
+    <string name="titulo">Título</string>
 </resources>

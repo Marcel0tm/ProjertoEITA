@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastrarVagasActivity">
+    android:background="@color/material_dynamic_secondary60"
+    tools:context=".CadastrarPerguntaActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -22,12 +23,12 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <EditText
-        android:id="@+id/edEmpresa"
+        android:id="@+id/edTitlulo"
         android:layout_width="258dp"
         android:layout_height="77dp"
         android:backgroundTint="@color/teal_200"
         android:ems="10"
-        android:hint="@string/name"
+        android:hint="@string/titulo"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,7 @@
         app:layout_constraintVertical_bias="0.124" />
 
     <EditText
-        android:id="@+id/edCargo"
+        android:id="@+id/edDescricao"
         android:layout_width="258dp"
         android:layout_height="77dp"
         android:backgroundTint="@color/teal_200"
@@ -52,7 +53,7 @@
         app:layout_constraintVertical_bias="0.348" />
 
     <EditText
-        android:id="@+id/edSalario"
+        android:id="@+id/edExplicacao"
         android:layout_width="258dp"
         android:layout_height="77dp"
         android:backgroundTint="@color/teal_200"
@@ -73,11 +74,24 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="88dp"
         android:text="@string/cadastrar"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edSalario"
+        app:layout_constraintTop_toBottomOf="@+id/edExplicacao"
         app:layout_constraintVertical_bias="0.294" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCadastrar"
+        app:layout_constraintVertical_bias="0.338" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

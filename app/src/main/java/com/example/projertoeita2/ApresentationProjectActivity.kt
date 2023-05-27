@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
+import com.example.projertoeita2.CadastrarPerguntaActivity
 import com.example.projertoeita2.R
 import com.example.projertoeita2.databinding.ActivityApresentationProjectBinding
 //import com.example.projetoeita2.databinding.ActivityApresentationProjectBinding
@@ -21,9 +22,14 @@ class ApresentationProjectActivity : AppCompatActivity() {
         val buttonNext = binding.buttonSendSolutionPresentation
 
         buttonNext.setOnClickListener {
-            //startActivity(Intent(this, FinalActivity::class.java))
             Toast.makeText(this, R.string.msgSucess, Toast.LENGTH_SHORT).show()
             finish()
+        }
+
+        val buttonSendQuestion = binding.buttonSendQuestions
+
+        buttonSendQuestion.setOnClickListener {
+            startActivity(Intent(this, CadastrarPerguntaActivity::class.java))
         }
     }
 }

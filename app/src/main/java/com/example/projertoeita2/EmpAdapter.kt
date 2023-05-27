@@ -18,7 +18,7 @@ class EmpAdapter(private val empList: ArrayList<empresaModelo>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentEmp = empList[position]
-        holder.tvEmpName.text = currentEmp.empNome
+        holder.tvEmpName.text = currentEmp.empTitulo
     }
 
     override fun getItemCount(): Int {

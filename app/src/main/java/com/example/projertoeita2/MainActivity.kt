@@ -9,18 +9,9 @@ import com.example.projertoeita2.databinding.ActivityMainBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-//import com.example.projetoeita2.databinding.ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
-
-
-    teste
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projertoeita2.databinding.ActivityCadastrarVagasBinding
+import com.example.projertoeita2.databinding.ActivityCadastrarPerguntaBinding
 import com.example.projertoeita2.databinding.ActivityListaVagasBinding
 import com.google.firebase.database.*
 import com.example.projetoeita2.empresaModelo
