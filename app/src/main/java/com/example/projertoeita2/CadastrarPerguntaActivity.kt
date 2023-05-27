@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.projertoeita2.databinding.ActivityCadastrarPerguntaBinding
 import com.example.projetoeita2.ApresentationProjectActivity
-import com.example.projetoeita2.empresaModelo
+import com.example.projetoeita2.perguntaModelo
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -44,7 +44,7 @@ class CadastrarPerguntaActivity : AppCompatActivity() {
 
             val empId = dbRef.push().key!!
 
-            val pergunta = empresaModelo(empId, empTitulo, empDescricao, empJustificativa)
+            val pergunta = perguntaModelo(empId, empTitulo, empDescricao, empJustificativa)
 
             dbRef.child(empId).setValue(pergunta)
                 .addOnCompleteListener{

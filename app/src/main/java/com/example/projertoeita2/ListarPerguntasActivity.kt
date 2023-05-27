@@ -1,22 +1,19 @@
 package com.example.projetoeita2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projertoeita2.databinding.ActivityCadastrarPerguntaBinding
 import com.example.projertoeita2.databinding.ActivityListaVagasBinding
 import com.google.firebase.database.*
-import com.example.projetoeita2.empresaModelo
 
 
-class ListaVagasActivity : AppCompatActivity() {
+class ListarPerguntasActivity : AppCompatActivity() {
     private lateinit var empRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
-    private lateinit var empList: ArrayList<empresaModelo>
+    private lateinit var empList: ArrayList<perguntaModelo>
     private lateinit var dbRef: DatabaseReference
     private lateinit var binding: ActivityListaVagasBinding
 
@@ -30,7 +27,7 @@ class ListaVagasActivity : AppCompatActivity() {
         empRecyclerView.setHasFixedSize(true)
         tvLoadingData = binding.tvLoadingData
 
-        empList = arrayListOf<empresaModelo>()
+        empList = arrayListOf<perguntaModelo>()
 
         getEmployeesData()
 
@@ -48,7 +45,7 @@ class ListaVagasActivity : AppCompatActivity() {
                 empList.clear()
                 if (snapshot.exists()){
                     for (empSnap in snapshot.children){
-                        val empData = empSnap.getValue(empresaModelo::class.java)
+                        val empData = empSnap.getValue(perguntaModelo::class.java)
                         empList.add(empData!!)
                     }
                     val mAdapter = EmpAdapter(empList)
